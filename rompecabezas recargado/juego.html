@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rompecabezas Recargado</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <div class="col-40">
+      <h1 id="titulo">Rompecabezas Recargado</h1>      
+      <h2 class="subtitulo">Seleccionar</h2>
+      <ul id="seleccionar">
+            <form id="Niveles" action="">
+                <input type="radio" name="nivel" value="facil"> Fácil
+                <input type="radio" name="nivel" value="medio"> Medio
+                <input type="radio" name="nivel" value="dificil"> Dificil
+               </form>
+      <h2 class="subtitulo">Instrucciones</h2>
+      <ul id="instrucciones">
+        <li>Para comenzar elegí la dificultad y dale click a Iniciar para que aparezca la imagen</li>
+        <li>Tenés que encontar el orden correcto de las piezas</li>
+        <li>Podés mover las piezas:</li>
+        <li class="mover">Con las flechas del teclado</li>
+        <li class="mover">Presionando con el mouse </li>
+      </ul>
+      <div id="contadores">
+          <p>Piezas por Lado:<input type="text" id="cantidadPiezasPorLado" value=""></p>
+          <p>Movimientos Disponibles: <input type="text" id="contadorDeMovimientos" value="" ></p>
+      </div>
+      <button id="btnInicio" class="btns">INICIAR</button>
+      <button id="btnReIniciar" class="btns">REINICIAR</button>
+      <button id="btnMezclar" class="btns">MEZCLAR</button>
+    </div>
+    </div>
+    <div class="col-60">
+        <canvas id="miCanvas" width="600" height="600"></canvas>
+    </div>
+        
+    <footer>
+      <p>Autor: Mauro Juarez, desarrollador Web Full Stack Jr.</p>
+    </footer>
+    <script src="js/juego.js"></script>
+    <script src="js/piezas.js"></script>
+    <script src="js/funcionalidadusuario.js"></script>
+  </body>
+</html>

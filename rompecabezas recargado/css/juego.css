@@ -1,0 +1,159 @@
+
+
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: 'Lato', sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/fondo0.jpg);
+  background-size: cover;
+}
+
+.subtitulo {
+  font-size: 24px;
+  letter-spacing: 1.25px;
+  color: #ff0000;
+  margin-bottom: 0;
+  margin-top: 22px;
+  border-bottom: 1px solid #ff0000;
+}
+
+canvas {
+  border: 1px solid #EC6778;  
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+h2{
+  padding: 2px;
+}
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+  background: #FFF;
+}
+.col-40 {
+  background: #FFF;
+  padding: 10px;
+  color: #000;
+}
+
+#titulo{
+  color: #fff;
+  background-color: #ef5350;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;  
+}
+
+#juego{
+  height: 600px;
+  width: 600px;
+  background-color:rgb(255, 150, 71);
+  text-align:center; ;
+  animation: fadein 2s;
+}
+
+.opcion-nivel {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  position: relative;
+  top: 1px;
+  height: 15px;
+  width: 14px;
+  border: 2px solid rgb(71, 61, 71);
+  cursor: pointer;  
+}
+
+#picture {
+  height: 200px;
+  width: 200px;
+  margin: 0 34px;
+  border: 3px solid #DE294E;
+}
+#juego div {
+  height: 32.5%;
+  width: 32.5%;
+  float: left;
+  animation: fadein 2s;
+  border: 2.5px solid #ab3c3c;
+}
+#juego img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+footer{
+  background-color: #424242;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+}
+
+.btns {
+  font-family: 'Lato', sans-serif;
+  font-size: 80%;
+  margin-top: 5px;
+  width: 45%;
+  padding: 10px;
+  background-color: #DE294E;
+  color:#fff;
+  border:1px solid #fff;
+  border-radius: 9px;
+ }
+
+.btns:hover { 
+  background: #e05389;
+  color:  rgb(252, 248, 249);
+  font-weight: bold;
+  border:1px solid  rgb(245, 240, 241);
+}
+.pieza{
+  border: 2px solid rgb(119, 249, 50);
+  width:33%;
+  height:33%;
+  float: left;
+
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.pieza img{
+  max-width: 100%;
+  display: block;
+}
+#contadores p{
+  margin-top: 5px;
+  margin-bottom: 0px;
+ }
+#contadores input{
+  background: transparent;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-style: none;
+}
